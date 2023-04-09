@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    background-color: #1a1a1a;
+    padding: 8px 0;
+    border-bottom: 3px solid #ffa31a;
+    background: linear-gradient(to bottom, #1a1a1a 0%, #0d0d0d 100%);
+}
+
+.navbar .container {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .container form input {
+    border: 3px solid #ffa31a;
+    height: 30px;
+    margin: auto;
+}
+
+@media (min-width: 1200px) {
+    .navbar .container form input {
+        width: 20rem;
+    }
+    .nav-links ul li a {
+        padding: 5px 18px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar .container {
+        width: 875px;
+    }
+    .navbar .container form input {
+        width: 20rem;
+    }
+    .nav-links ul li a{
+       
+        padding:  5px 15px;
+       
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar .container {
+        width: 750px;
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .navbar .container form {
+        padding-top: 15px;
+    }
+    .navbar .container form input {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .container {
+        width: 600px;
+    }
+    .navbar .container form input {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar .container {
+         width: 330px;
+    }
+    .navbar .container form input {
+        width: 15rem;
+    }
+}
+
+.navbar .container .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .container .logo .logo-text {
+    color: #ffa31a;
+    vertical-align: middle;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nav-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.4s;
+}
+
+.nav-links ul li a:hover {
+    border-bottom: 2px solid #ffa31a;
+    color: #ffa31a;
+}
+
+.navbar .container form button {
+    padding: 5px;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 20px;
+    border: 3px solid #ffa31a;
+    color: #ffa31a;
+    background-color: #1a1a1a;
+    transition: all 0.4s;
+}
+
+.navbar .container form button:hover {
+    color: #1a1a1a;
+    background-color: #ffa31a;
+}
